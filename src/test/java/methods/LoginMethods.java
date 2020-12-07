@@ -16,6 +16,7 @@ public class LoginMethods extends BaseMethods {
     //"Girilen bilgilerle birlikte kullanıcı login olur.")
     public LoginMethods login(String email, String password) {
         waitForPageLoad(loginPage.mainPageText);
+
         clickElement(loginPage.mainLoginButton);
         waitSeconds(3);
         writeText(loginPage.loginpageEmail, email);
